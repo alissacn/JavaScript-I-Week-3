@@ -5,10 +5,18 @@
   - Finish the statement on line 11 to produce an array with valid content
   - Do not edit any of the existing code
 */
+function filterPair(arr) {
+  if (arr !== null && typeof Array && arr.length === 2) {
+    return arr;
+  } else {
+    return false;
+  }
+};
+
 
 var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
 
-var pairsByIndex; // Complete this statement
+var pairsByIndex = pairsByIndexRaw.filter(filterPair); // Complete this statement
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
 var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];
@@ -20,3 +28,5 @@ var pairs = pairsByIndex.map(function(indexes) {
 });
 
 console.log(pairs);
+
+

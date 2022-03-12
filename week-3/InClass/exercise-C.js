@@ -18,7 +18,15 @@ function magician(yourFunc) {
       "Antigoni",
     ];
   
-    const magicOutput = yourFunc.map(namesArray);
+    const magicOutput = yourFunc(namesArray);
   
-    return magicOutput;
-  }
+    return magicOutput();
+
+  };
+
+function UpperCase(array) {
+  return () => array.map(word => word.toUpperCase());
+}
+
+console.log(magician(UpperCase));
+  

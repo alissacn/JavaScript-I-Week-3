@@ -6,10 +6,12 @@
 
 const peopleInTheTable = ["Mimi ", "Jojo ", "Adilson ", "Alissa."];
 
-console.log(peopleInTheTable + " There are 4 people in the table");
+console.log(peopleInTheTable.length);
 
-const NewPeople = peopleInTheTable.unshift("Ana");
+const NewName = ("Ana")
 
-const Otherpeople = peopleInTheTable.push("Rick"); 
+peopleInTheTable.unshift(NewName);
+
+peopleInTheTable.push(NewName); 
 
 

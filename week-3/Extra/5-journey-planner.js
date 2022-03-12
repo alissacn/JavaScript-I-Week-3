@@ -7,7 +7,15 @@
   NOTE: only the names should be returned, not the means of transport.
 */
 
-function journeyPlanner() {
+function journeyPlanner(modeOfTransport) {
+  let formsOfTransport = [];
+  modeOfTransport.map((wayToGo) => {
+    if (wayToGo.includes()) {
+      return 
+    }
+  }
+
+
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

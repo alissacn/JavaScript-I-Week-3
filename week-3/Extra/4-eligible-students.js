@@ -7,10 +7,17 @@
   - Returns an array containing only the names of the who have attended AT LEAST 8 classes
 */
 
-function eligibleStudents() {
-
+function eligibleStudents(attendance) {
+  let eligibleName = [];
+  attendance.map((StudantAttendances) => {
+    if (StudantAttendances[2] >= 8) {
+      eligibleName.push(StudantAttendances);
+    }
+  });
+  return eligibleName;
 }
 
+ 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const attendances = [

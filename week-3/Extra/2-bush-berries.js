@@ -10,8 +10,21 @@
   Use the tests to confirm which message to return
 */
 
-function bushChecker() {
+function bushChecker(safeBerriesArray) {
+  let isPink = false;
+  safeBerriesArray.map((colorBerries) => {
+    isPink = colorBerries === "pink";
+    if (!isPink) {
+      return;    
+    }
+  });
 
+  
+  if (isPink) {
+    return "Bush is safe to eat from";
+  } else {
+    return "Toxic! Leave bush alone!";
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

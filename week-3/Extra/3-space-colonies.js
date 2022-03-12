@@ -8,12 +8,20 @@
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
 
+function colonisers(names) {
+  let familyNamesWithA = [];
+  names.map((name) => {
+    if (name.startsWith("A") && name.includes("family")) {
+      familyNamesWithA.push(name);
+    }
+  });
+  return familyNamesWithA;
 }
+  
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
-
 const voyagers = [
   "Adam family",
   "Potter family",
@@ -28,6 +36,7 @@ const voyagers = [
   "Avery family",
   "Archer family"
 ];
+
 
 const util = require('util');
 
