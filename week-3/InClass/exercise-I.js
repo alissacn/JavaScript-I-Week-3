@@ -5,14 +5,16 @@
    If you're using the above example, you should expect to return an array with 2x ELAMIN!, 1x SANYIA!, 2x ISMAEL! and 1x JAMES!
 */
 
-
-const MessyNames = [100, "iSMael", 55,45,"sANyiA",66,"JaMEs","eLAmIn", 23, "IsMael",67, 19, "ElaMIN"];
+let MessyNames = [100, "iSMael", 55,45,"sANyiA",66,"JaMEs","eLAmIn", 23, "IsMael",67, 19, "ElaMIN"];
 
 function FixMessyString(messyString) {
-   return messyString;
-   MessyNames.filter((string) => typeof string === "string")
-   .map((string) => string.toUpperCase())
-   .map((string) => string + "!")
+   return messyString.map((string) => string.toUpperCase() + "!");
 }
 
 console.log(FixMessyString(MessyNames));
+   
+   
+
+
+
+   

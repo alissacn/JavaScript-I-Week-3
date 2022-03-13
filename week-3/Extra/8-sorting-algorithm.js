@@ -17,10 +17,11 @@ You don't have to worry about making this algorithm work fast! The idea is to ge
 function sortAges(arr) {
   newArray = [];
   arr.map((arrays) => {
-    if (typeof arrays === "number") {
+    if  (typeof  arrays === "number") {
       newArray.push(arrays);
     }
   });
+  return newArray;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
